@@ -64,12 +64,19 @@ html, body {
     left: 0;
 }
 .base-input {
-	width: 150%;
+	width: 100%;
 	height: 30px;
 	/*position: absolute;*/
 	/*bottom: 0;*/
 }
-
+textarea.base-input {
+	height: 150px;
+}
+.process-feature .base-input.text-input {
+	position: absolute;
+	bottom: 10px;
+	left:0;
+}
 @media (max-width: 900px) {
 	h1.slogan {
 		/*padding: 5px;*/
