@@ -1,27 +1,3 @@
-<!-- ЗАДАНИЕ
-
-	- Сделать возможность передвигать блоки с текстом и вставлять ссылки на блоки с текстом внутри редактора
-	- Сделать возможность менять картинки ✓
-	- Сделать возможность менять текст ✓
-	- Сделать отдельный редактор вебсайта на html и javascript ✓
-	- Cделать чтобы редактор загружал вывод куда ни будь в качестве одного html файла
-	- Добавить модуль обратной связи
-	- Зафиксировать масштаб в 110% для 1024 ширины
-	- Зафиксировать масштаб в 125% для 1300+ ширины
-	- Сделать изменение бекграунда блоков 
-	
-	- @Базовые блоки:
-		
-		- 3 карточки ✓
-		- 5 картинок с/без текста ✓
-		- 3 картинки с/без текста ✓
-		- Верхняя информация ✓
-		
-		- 1 карточка
-		- Нижняя информация
- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,50 +10,89 @@
 <body>
 	<div class="head-container max-1000" id="top_nav">
 	</div>
-	<div class="slide-container" style="margin-top: 50px;" id="first_slide">
+	<div class="slide-container" style="margin-top:50px;" id="first_slide">
 	</div>
-
 	<div class="slide-container" id="second_slide">
 	</div>
-
 	<div class="slide-container" id="third_slide">
-
 	</div>
-
 	<div class="slide-container" id="fourth_slide">
-
 	</div>
-
-	<div class="slide-container" style="margin-top: 50px;" id="fifth_slide">
-
+	<div class="slide-container" style="margin-top:50px;" id="fifth_slide">
 	</div>
-
-
-	<div class="slide-container" style="margin-top: 50px;">
-
+	<div class="slide-container" style="margin-top:50px;">
 		<div class="row">
 			<div class="col-xs-12 text-center">
 				<hr>
-				<h4 style="text-transform: uppercase;">Подробная Контактная Информация</h4>
+				<h4 style="text-transform: uppercase;">Свяжитесь с нами</h4>
 				<hr>
 			</div>
 		</div>
+		<div class="row" style="width:70%;margin:0 auto;padding-bottom: 100px;">
 
-		<div class="row">
-			<div class="col-xs-4">
+			<form role="form" id="contact-form" class="contact-form">
+	            <div class="row">
+	        		<div class="col-md-6">
+	          		<div class="form-group">
+	                    <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Имя и Фамилия">
+	          		</div>
+	          	</div>
+	            	<div class="col-md-6">
+	          		<div class="form-group">
+	                    <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+	          		</div>
+	          	</div>
+	          	</div>
+	          	<div class="row">
+	          		<div class="col-md-12">
+	          		<div class="form-group">
+	                    <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Ваше предложение или запрос"></textarea>
+	          		</div>
+	          	</div>
+	            </div>
+	            <div class="row">
+	            <div class="col-md-12">
+	          <button type="submit" class="btn main-btn pull-right">Отправить</button>
+	          </div>
+	          </div>
+	        </form>
+			<!-- <div class="col-xs-4">
 				<ul>
 					<li>
+
 					</li>
 				</ul>
 			</div>
-			<div class="col-xs-8">
-				
-			</div>
+			<div class="col-xs-8">	
+			</div> -->
 		</div>
-
 	</div>
-	<script type="text/javascript" src="SiteBuilderFrameworkConfiguration.js"></script>
-	<script type="text/javascript" src="SiteBuilderFrameworkTemplateEngine.js"></script>
-	<script type="text/javascript" src="SiteBuilderFramework.js"></script>
+	<div id="scripts_container">
+		<!-- ЗАДАНИЕ
+
+		- Сделать возможность передвигать блоки с текстом и вставлять ссылки на блоки с текстом внутри редактора
+		- Сделать возможность менять картинки ✓
+		- Сделать возможность менять текст ✓
+		- Сделать отдельный редактор вебсайта на html и javascript ✓
+		- Cделать чтобы редактор загружал вывод куда ни будь в качестве одного html файла ✓
+		- Добавить модуль обратной связи ✓
+		- Зафиксировать масштаб в 110% для 1024 ширины
+		- Зафиксировать масштаб в 125% для 1300+ ширины
+		- Сделать изменение бекграунда блоков 
+		
+		- @Базовые блоки:
+			
+			- 3 карточки ✓
+			- 5 картинок с/без текста ✓
+			- 3 картинки с/без текста ✓
+			- Верхняя информация ✓
+			
+			- 1 карточка
+			- Нижняя информация ✓
+	 	-->
+		<script type="text/javascript" src="SiteBuilderFrameworkConfiguration.js"></script>
+		<script type="text/javascript" src="SiteBuilderFrameworkTemplateEngine.js"></script>
+		<script type="text/javascript" src="SiteBuilderFramework.js"></script>
+	</div>
 </body>
 </html>

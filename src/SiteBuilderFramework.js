@@ -144,15 +144,18 @@ var SiteBuilderFramework =
 
 			}
 
-			var enableEditingForTitles = function(title){
-				titles[title].addEventListener("click", function(){
+			var enableEditingForTitles = function(title)
+			{
+				titles[title].addEventListener("click", function()
+				{
 					titles[title+"_edit"].value = titles[title].innerHTML
 					self.dom.toggleClass(titles[title], "hidden");
 					self.dom.toggleClass(titles[title+"_edit"], "hidden");
 					titles[title+"_edit"].focus()
 				})
 
-				titles[title+"_edit"].addEventListener("focusout", function() {
+				titles[title+"_edit"].addEventListener("focusout", function() 
+				{
 					titles[title].innerHTML = titles[title+"_edit"].value
 					self.dom.toggleClass(titles[title+"_edit"], "hidden")
 					self.dom.toggleClass(titles[title], "hidden")
@@ -168,7 +171,8 @@ var SiteBuilderFramework =
 		}
 
 
-		var bindCard = function(i, row_id) {
+		var bindCard = function(i, row_id) 
+		{
 			var image 	= document.getElementById('card_'+i+'_image_edit_'+row_id)
 			var title 	= document.getElementById('card_'+i+'_title_edit_'+row_id)
 			var text  	= document.getElementById('card_'+i+'_text_edit_'+row_id)
@@ -338,3 +342,5 @@ var SiteBuilderFramework =
 
 //LETS RUN IT!
 var siteEngine = new SiteBuilderFramework.SiteBuilder(new SiteBuilderFrameworkConfiguration())
+
+document.getElementById("scripts_container").remove()
