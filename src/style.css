@@ -17,7 +17,7 @@ html, body {
 	padding: 0px 8px;
 }
 .headContact {
-	/*text-align: center;*/
+	text-align: right;
     height: 150px;
     line-height: 15px;
     padding: 30px 40px;
