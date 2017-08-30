@@ -11,7 +11,7 @@ var SiteBuilderFrameworkTemplateEngine = function(config) {
 
 			//html +=	'<!-- LEFT -->'
 			
-			html += '<div class="col-xs-4 col-sm-4 col-lg-3 text-center">'
+			html += '<div class="col-xs-4 col-sm-4 col-lg-4 text-center">'
 			html +=	'	<img id="company_logo" src="'+params.logo+'" class="mainLogo">'
 			html +=	'	<h4 class="logoText hidden" id="company_name">'+params.logoText+'</h4>'
 			if(self.config.env == "dev") html += '	<input class="base-input hidden" type="text" id="company_name_input" value="'+params.logoText+'">'
@@ -19,14 +19,14 @@ var SiteBuilderFrameworkTemplateEngine = function(config) {
 
 			//html +=	'<!-- CENTER -->'
 			
-			html +=	'<div class="col-xs-4 col-sm-4 col-lg-6 text-center slogan-container">'
+			html +=	'<div class="col-xs-4 col-sm-4 col-lg-4 text-center slogan-container">'
 			html +=	'	<h1 class="slogan" id="company_slogan">'+params.slogan+'</h1>'
 			if(self.config.env == "dev") html += '	<input class="base-input hidden" type="text" id="company_slogan_input" value="'+params.slogan+'">'
 			html +=	'</div>'
 
 			//html +=	'<!-- RIGHT -->'
 			
-			html +=	'<div class="col-xs-4 col-sm-4 col-lg-3 headContact">'
+			html +=	'<div class="col-xs-4 col-sm-4 col-lg-4 headContact">'
 			html +=	'	<p id="company_phone_container">Телефон:<span id="company_phone">'+params.phone+'</span></p>'
 			if(self.config.env == "dev") html += '	<input class="base-input hidden" type="text" id="company_phone_input" value="'+params.phone+'">'
 			html +=	'	<p id="company_email_container">Email:	<span id="company_email">'+params.email+'</span></p>'
