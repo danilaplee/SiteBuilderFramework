@@ -27,9 +27,9 @@ var SiteBuilderFrameworkTemplateEngine = function(config) {
 			//html +=	'<!-- RIGHT -->'
 			
 			html +=	'<div class="col-xs-4 col-sm-4 col-lg-4 headContact">'
-			html +=	'	<p id="company_phone_container">Телефон:<span id="company_phone">'+params.phone+'</span></p>'
+			html +=	'	<p id="company_phone_container">Телефон:<span id="company_phone"> '+params.phone+'</span></p>'
 			if(self.config.env == "dev") html += '	<input class="base-input hidden" type="text" id="company_phone_input" value="'+params.phone+'">'
-			html +=	'	<p id="company_email_container">Email:	<span id="company_email">'+params.email+'</span></p>'
+			html +=	'	<p id="company_email_container">Email:	<span id="company_email"> '+params.email+'</span></p>'
 			if(self.config.env == "dev") html += '	<input class="base-input hidden" type="text" id="company_email_input" value="'+params.email+'">'
 			html +=	'	<p id="company_address_container">Адрес:	<span id="company_address">'+params.address+'</span></p>'
 			if(self.config.env == "dev") html += '	<input class="base-input hidden" type="text" id="company_address_input" value="'+params.address+'">'
