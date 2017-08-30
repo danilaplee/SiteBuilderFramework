@@ -7,21 +7,24 @@ html, body {
 	-webkit-overflow-scrolling: touch;
 }
 .mainLogo {
-	padding: 10px;
-	height: 125px;
-	width: auto;
+    padding: 10px;
+    height: 130px;
+    width: 130px;
+    text-align: center;
 }
 .logoText {
 	padding: 0px 8px;
 }
 .headContact {
 	height: 150px;
-	line-height: 20px;
-	padding: 50px 20px;
-	font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+    font-size: 14px;
+/*}*/
 }
 .slogan {
-	padding-top: 5px;
+	/*padding-top: 5px;*/
+    font-size: 40px;
 }
 
 .max-1000 {
