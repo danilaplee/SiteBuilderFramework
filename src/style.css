@@ -8,18 +8,19 @@ html, body {
 }
 .mainLogo {
     padding: 10px;
-    height: 130px;
-    width: 130px;
-    text-align: center;
+    height: 125px;
+    width: 125px;
+    margin-left: 25px;
+    /*text-align: center;*/
 }
 .logoText {
 	padding: 0px 8px;
 }
 .headContact {
-	text-align: right;
+	/*text-align: center;*/
     height: 150px;
-    line-height: 20px;
-    padding: 20px 40px;
+    line-height: 15px;
+    padding: 30px 40px;
     font-size: 14px;
 }
 .slogan {
