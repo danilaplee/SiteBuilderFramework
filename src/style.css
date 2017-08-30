@@ -27,6 +27,8 @@ html, body {
 .slogan {
     font-size: 40px;
     width: 80%;
+    font-weight:600;
+    color:#000;
     margin: 20px auto;
 }
 
